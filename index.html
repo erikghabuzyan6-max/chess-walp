@@ -1,33 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Скачивание файлов</title>
+<title>Installation Guide</title>
 <style>
-body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px}
-video{width:100%;max-width:800px;border-radius:10px}
-.btn{display:inline-block;padding:12px 20px;background:#2563eb;color:white;text-decoration:none;border-radius:8px}
-.box{background:#f3f4f6;padding:15px;border-radius:8px;margin-top:20px}
+body{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f9fa;
+}
+.container{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+video{
+    width:100%;
+    max-width:800px;
+    border-radius:10px;
+}
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+.btn:hover{
+    opacity:.9;
+}
+.instructions{
+    margin-top:20px;
+    padding:15px;
+    background:#f3f4f6;
+    border-radius:8px;
+}
 </style>
 </head>
 <body>
-<h1>Инструкция по установке</h1>
 
-<p>Посмотри видео ниже, затем скачай ZIP-архив.</p>
+<div class="container">
 
-<video controls>
-  <source src="tuto.mp4" type="video/mp4">
-  Ваш браузер не поддерживает видео.
-</video>
+<h1>Installation Guide</h1>
 
-<p style="margin-top:20px;">
-  <a class="btn" href="Новая папка.zip" download>Скачать ZIP</a>
+<p>
+Watch the tutorial video below, then download the required files.
 </p>
 
-<div class="box">
-<h2>Куда вставить файлы</h2>
-<p>После скачивания архива открой его и следуй инструкции из видео.</p>
+<video controls>
+    <source src="tuto.mp4" type="video/mp4">
+    Your browser does not support video playback.
+</video>
+
+<br><br>
+
+<a class="btn" href="NewFolder.zip" download>
+    Download Files
+</a>
+
+<div class="instructions">
+    <h2>How to Install</h2>
+    <ol>
+        <li>Download the ZIP archive.</li>
+        <li>Extract the files.</li>
+        <li>Watch the tutorial video carefully.</li>
+        <li>Place the extracted files in the location shown in the video.</li>
+        <li>Launch the application and enjoy.</li>
+    </ol>
+</div>
+
 </div>
 
 </body>
